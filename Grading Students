@@ -1,0 +1,14 @@
+def gradingStudents(grades):
+    # Write your code here
+    for i in range(len(grades)):
+        if grades[i] >= 35:
+            n = 5-(grades[i]%5)
+            if n < 3:
+                grades[i] = grades[i]+n
+            else:
+                continue
+        else:
+            continue
+    return grades
+    
+   
